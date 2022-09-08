@@ -26,6 +26,13 @@ export class Tab3Page implements OnInit {
   }
 
   enviar() {
-    console.log('Enviar');
+    let nome = this.form.get('nome').value;
+    let endereco = this.form.get('endereco').value;
+    console.log(nome);
+    console.log(endereco);
+
+    this.abrirUrl(
+      `https://api.whatsapp.com/send?phone=5521994074268&text=Olá%20me%20chamo%20${nome}%20.%20Moro%20no%20endereço%20${endereco}`
+    );
   }
 }
