@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content (click)="doarAlimentos()">
   <div class="conteudo animate__animated animate__fadeInLeft">
     <ion-card>
       <ion-item lines="none">
@@ -17,7 +17,7 @@
       </ion-item>
     </ion-card>
 
-    <ion-card>
+    <ion-card (click)="doarRoupas()">
       <ion-item lines="none">
         <ion-thumbnail slot="start">
           <img
@@ -28,7 +28,7 @@
       </ion-item>
     </ion-card>
 
-    <ion-card>
+    <ion-card (click)="doarSangue()">
       <ion-item lines="none">
         <ion-thumbnail slot="start">
           <img
@@ -38,6 +38,5 @@
         <ion-label>Sangue</ion-label>
       </ion-item>
     </ion-card>
-    
   </div>
 </ion-content>
