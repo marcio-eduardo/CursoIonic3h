@@ -32,16 +32,30 @@
   text-align: center;
 }
 
+ion-card {
+  border-radius: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+ion-card:hover {
+  transform: scale(1.1);
+}
+
 .img-item {
   padding: 2rem;
   padding-bottom: o;
   width: 100%;
-  max-width: 40rem;
+  max-width: 35rem;
+
+  animation: animation-img-item 4s infinite alternate;
 }
 ion-thumbnail {
-  animation: animation-img-item 1s infinite alternate;
+  animation: animation-item 4s infinite alternate;
 }
-@keyframes animation-img-item {
+
+@keyframes animation-item {
   0% {
     transform: translate(0px, 5px);
   }

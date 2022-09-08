@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <div class="conteudo">
+  <div class="conteudo animate__animated animate__fadeInLeft">
     <img
       class="img-item"
       src="https://drive.google.com/uc?id=16sL85fCiC5QVJsjgMPoWUTy374Wmlsny"
@@ -14,7 +14,8 @@
     <p>
       Existem pessoas precisando muito da sua ajuda! Veja abaixo como ajudar. 😉
     </p>
-    <ion-card>
+
+    <ion-card [routerLink]="['/tabs/tab2']">
       <ion-item>
         <ion-thumbnail slot="start">
           <img
@@ -24,7 +25,8 @@
         <ion-label>Quero Doar</ion-label>
       </ion-item>
     </ion-card>
-    <ion-card>
+
+    <ion-card [routerLink]="['/tabs/tab3']">
       <ion-item>
         <ion-thumbnail slot="start">
           <img
