@@ -47,7 +47,7 @@ ion-card:hover {
   padding: 2rem;
   padding-bottom: o;
   width: 100%;
-  max-width: 35rem;
+  max-width: 25rem;
 
   animation: animation-img-item 4s infinite alternate;
 }
