@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-tab3',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss'],
 })
 export class Tab3Page {
-  constructor() {}
+
+  form: FormGroup;
+
+
+
+  constructor(
+    private formBuilder: FormBuilder
+  ) {}
 
   abrirUrl(url: string) {
     window.open(url, '_blank').focus();
